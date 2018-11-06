@@ -1,19 +1,17 @@
-title: Mediocre Game Studios
+url: https://mediocre.pl
+name: Mediocre Game Studios
 description: "We're making sort of good games."
-
-future: false
-unpublished: false
 
 lang: pl_PL
 language: pl
 encoding: utf-8
 timezone: Europe/Warsaw
+
+future: false
+unpublished: false
 permalink: /blog/:title
 
-baseurl:
-  url: https://mediocre.pl
-
-nav:
+links:
   local:
     - name: about
       href: /about
@@ -49,9 +47,9 @@ exclude:
   - _drafts
 
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-sitemap
+# - jekyll-seo-tag
 
 markdown: kramdown
 
