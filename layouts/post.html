@@ -8,7 +8,9 @@ layout: base
     </div>
     <div class="post-aside">
       <div class="post-date">
+        {% if page.date %}
         <span>{{ page.date | date_to_string }}</span>
+        {% endif %}
       </div>
     </div>
   </div>
