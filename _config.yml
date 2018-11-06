@@ -1,1 +1,71 @@
-theme: jekyll-theme-tactile
+title: Mediocre Game Studios
+description: "We're making sort of good games."
+
+future: false
+unpublished: false
+
+lang: pl_PL
+language: pl
+encoding: utf-8
+timezone: Europe/Warsaw
+permalink: /blog/:title
+
+baseurl:
+  url: https://mediocre.pl
+
+nav:
+  local:
+    - name: about
+      href: /about
+    - name: contact
+      href: /contact
+    - name: feed
+      href: /feed.xml
+
+    external:
+      - name: github
+        href: https://github.com/mediocre-game-studios
+      - name: twitter
+        href: https://twitter.com/mediocre-game-studios
+
+posts_dir: posts
+pages_dir: pages
+drafts_dir: drafts
+assets_dir: files
+layouts_dir: layouts
+includes_dir: includes
+
+include:
+  - pages
+  - assets
+
+exclude:
+  - CNAME
+  - LICENSE
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - _posts/example.md
+  - _drafts
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+markdown: kramdown
+
+scss:
+  style: compressed
+
+# compress.html by Jonathan Volebregt
+# http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+    blanklines: false
+    profile: false
+    startings: [html, head, body]
