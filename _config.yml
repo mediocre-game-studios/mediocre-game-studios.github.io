@@ -1,5 +1,5 @@
-url: https://mediocre.pl
-name: Mediocre Game Studios
+url: "https://mediocre.pl"
+name: "Mediocre Game Studios"
 description: "We're making sort of good games."
 
 lang: pl_PL
@@ -15,36 +15,30 @@ links:
   local:
     - name: about
       href: /about
-    - name: contact
-      href: /contact
     - name: feed
       href: /feed.xml
 
-    external:
-      - name: github
-        href: https://github.com/mediocre-game-studios
-      - name: twitter
-        href: https://twitter.com/mediocre-game-studios
+  external:
+    - name: github
+      href: https://github.com/mediocre-game-studios
+    - name: twitter
+      href: https://twitter.com/mediocre-game-studios
 
-posts_dir: posts
 pages_dir: pages
-drafts_dir: drafts
+posts_dir: posts
 assets_dir: files
 layouts_dir: layouts
 includes_dir: includes
 
 include:
   - pages
-  - assets
+  - posts
+  - files
 
 exclude:
   - CNAME
-  - LICENSE
   - README.md
-  - Gemfile
-  - Gemfile.lock
-  - _posts/example.md
-  - _drafts
+  - includes
 
 plugins:
   - jekyll-feed
