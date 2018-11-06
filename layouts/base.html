@@ -1,0 +1,42 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="{{ site.encoding }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <link rel="icon" type="image/x-icon" href="/{{ site.assets_dir }}/favicon.ico">
+    <link rel="alternate" href="{{ site.url }}" hreflang="x-default">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ site.name }} RSS Feed">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <style type="text/css">
+  {% capture scss %}{% include style.scss %}{% endcapture %}{{ scss | scssify }}
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-content">
+          <div class="header-title">
+            <h1>{{ site.name }}</h1>
+          </div>
+          <div class="header-nav">
+            <div class="header-nav-local">
+              {% for link in site.links.local %}
+              <a href="{{ link.href }}">{{ link.name }}</a>
+              {% endfor %}
+            </div>
+            <div class="header-nav-external">
+              {% for link in site.links.external %}
+              <a href="{{ link.href }}" target="_blank">{{ link.name }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ content }}
+    </div>
+  </body>
+</html>
