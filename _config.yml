@@ -31,14 +31,16 @@ layouts_dir: layouts
 includes_dir: includes
 
 include:
-  - pages
-  - posts
   - files
+# I'm not sure if We need these...
+# - pages
+# - posts
 
 exclude:
-  - CNAME
-  - README.md
+  - layouts
   - includes
+  - README.md
+  - CNAME
 
 plugins:
   - jekyll-feed
