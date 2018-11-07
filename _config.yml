@@ -32,9 +32,6 @@ includes_dir: includes
 
 include:
   - files
-# I'm not sure if We need these...
-# - pages
-# - posts
 
 exclude:
   - layouts
@@ -45,21 +42,8 @@ exclude:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-# - jekyll-seo-tag
 
 markdown: kramdown
 
 scss:
   style: compressed
-
-# compress.html by Jonathan Volebregt
-# http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: [local]
-    blanklines: false
-    profile: false
-    startings: [html, head, body]
