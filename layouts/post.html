@@ -3,16 +3,12 @@ layout: base
 ---
 <div class="post">
   <div class="post-header">
-    <div class="post-title">
-      <h1>{{ page.title }}</h1>
-    </div>
-    <div class="post-aside">
-      {% if page.date %}
-      <div class="post-date">
-        <span>{{ page.date | date_to_string }}</span>
-      </div>
-      {% endif %}
-    </div>
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="post-aside">
+    {% if page.date %}
+    <span>{{ page.date | date_to_string }}</span>
+    {% endif %}
   </div>
   <div class="post-content">
   {{ content }}
