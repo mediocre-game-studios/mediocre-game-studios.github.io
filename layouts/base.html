@@ -2,15 +2,18 @@
 <html lang="{{ site.language }}">
   <head>
     <meta charset="{{ site.encoding }}">
-    <meta name="theme-color" content="#202020">
+    <meta name="theme-color" content="#1A1A1A">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
     <link rel="icon" type="image/x-icon" href="/{{ site.assets_dir }}/logo.ico">
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.name }} RSS Feed" href="/feed.xml">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap of {% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}" href="/sitemap.xml">
     <style type="text/css">
-    {% capture scss %}{% include style.scss %}{% endcapture %}{{ scss | scssify }}
+    {% capture scss %}
+      {% include style.scss %}
+    {% endcapture %}
+    {{ scss | scssify }}
     </style>
   </head>
   <body>
