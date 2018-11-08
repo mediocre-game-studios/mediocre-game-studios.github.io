@@ -45,5 +45,7 @@ plugins:
 
 markdown: kramdown
 
+highlighter: rouge
+
 scss:
   style: compressed
