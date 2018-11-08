@@ -1,5 +1,5 @@
 ---
 layout: page
 title: About Us
-permalink: /about
+permalink: /about-us
 ---

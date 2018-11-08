@@ -13,15 +13,15 @@ permalink: /blog/:title
 
 links:
   local:
-    - name: about
-      href: /about
-    - name: feed
+    - name: About Us
+      href: /about-us
+    - name: Feed
       href: /feed.xml
 
   external:
-    - name: github
+    - name: GitHub
       href: https://github.com/mediocre-game-studios
-    - name: twitter
+    - name: Twitter
       href: https://twitter.com/mediocre-game-studios
 
 pages_dir: pages
