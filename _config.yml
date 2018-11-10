@@ -1,5 +1,5 @@
 url: "https://mediocre.pl"
-name: "Mediocre Game Studios"
+name: "MEDIOCRE GAME STUDIOS"
 description: "We're making sort of good games."
 
 lang: pl_PL
@@ -15,7 +15,7 @@ links:
   local:
     - name: About Us
       href: /about-us
-    - name: Feed
+    - name: RSS Feed
       href: /feed.xml
 
   external:

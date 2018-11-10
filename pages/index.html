@@ -2,9 +2,7 @@
 layout: base
 permalink: /
 ---
-{% if site.posts.size == 0 %}
-<h2>Sorry, there is nothing here.</h2>
-{% else %}
+{% if site.posts.size > 0 %}
 {% for post in site.posts %}
 <div class="post">
   <div class="post-header post--small">
