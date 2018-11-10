@@ -4,6 +4,7 @@
     <meta charset="{{ site.encoding }}">
     <meta name="theme-color" content="#1A1A1A">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
     <link rel="icon" type="image/x-icon" href="/{{ site.assets_dir }}/logo.ico">
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}">
@@ -19,20 +20,17 @@
   <body>
     <div class="base-container">
       <div class="base-header">
-        <div class="base-title">
-          <h1>{{ site.name }}</h1>
-        </div>
-        <div class="base-links">
-          <div class="base-links-local">
-            {% for link in site.links.local %}
-            <a href="{{ link.href }}">{{ link.name }}</a>
-            {% endfor %}
+        <a href="/">
+          <div class="base-header-logo">
+            {% include name.svg %}
           </div>
-          <div class="base-links-external">
-            {% for link in site.links.external %}
-            <a href="{{ link.href }}" target="_blank">{{ link.name }}</a>
-            {% endfor %}
-          </div>
+        </a>
+      </div>
+      <div class="base-links">
+        <div class="base-links-local">
+          {% for link in site.links %}
+          <a href="{{ link.href }}">{{ link.name }}</a>
+          {% endfor %}
         </div>
       </div>
       <div class="base-content">

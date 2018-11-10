@@ -12,17 +12,12 @@ unpublished: false
 permalink: /blog/:title
 
 links:
-  local:
-    - name: About Us
-      href: /about-us
-    - name: RSS Feed
-      href: /feed.xml
-
-  external:
-    - name: GitHub
-      href: https://github.com/mediocre-game-studios
-    - name: Twitter
-      href: https://twitter.com/mediocre-game-studios
+  - name: About Us
+    href: /about-us
+  - name: GitHub
+    href: https://github.com/mediocre-game-studios
+  - name: Twitter
+    href: https://twitter.com/mediocre-game-studios
 
 pages_dir: pages
 posts_dir: posts
