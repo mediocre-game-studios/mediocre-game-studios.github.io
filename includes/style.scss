@@ -1,4 +1,21 @@
+@font-face {
+  font-family: big-john-light;
+  src: url(files/fonts/big-john-light.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: big-john-regular;
+  src: url(files/fonts/big-john-regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: big-john-bold;
+  src: url(files/fonts/big-john-bold.otf);
+  font-weight: 700;
+}
+
 html {
+  font-family: big-john-regular;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.6;
@@ -159,23 +176,48 @@ pre code {
 }
 
 .base {
+  a {
+    text-transform: uppercase;
+  }
+
   &-container {
-    margin: 0 1rem 1rem 1rem;
   }
 
   &-header {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     margin-bottom: 4rem;
   }
 
   &-title {
+    width: 100%;
+    font-family: big-john-bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    &-top {
+      text-size-adjust: 100%;
+    }
+    
+    &-bottom {
+      text-size-adjust: 100%;
+    }
   }
 
   &-links {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    text-transform: uppercase;
+    font-family: big-john-light;
+    font-weight: 700;
+
+    a {
+      margin-right: 2rem;
+    }
 
     &-local {
     }
