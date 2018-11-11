@@ -191,7 +191,7 @@ pre code {
 
   &-links {
     width: 80%;
-    padding: 0 10% 1rem 10%;
+    margin: 0 10% 1rem 10%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -201,7 +201,7 @@ pre code {
     margin-bottom: calc(2vw + 1vh);
 
     a {
-      margin: 0 5px;
+      margin: 5px;
       white-space: nowrap;
       /* freaking CSS... https://css-tricks.com/books/volume-i/scale-typography-screen-size */
       font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1200 - 300)));
