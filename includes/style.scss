@@ -14,14 +14,6 @@
   font-weight: 700;
 }
 
-html {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -30,6 +22,8 @@ body {
   color: #987F5E;
   background: #1A1A1A;
   margin: 0rem auto 2rem auto;
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 
 a {
@@ -51,19 +45,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: calc(22px + (22 - 14) * ((100vw - 300px) / (1200 - 300)));
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: calc(20px + (20 - 12) * ((100vw - 300px) / (1200 - 300)));
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: calc(18px + (18 - 10) * ((100vw - 300px) / (1200 - 300)));
 }
 
 h4, h5, h6 {
-  font-size: 1rem;
+  font-size: calc(16px + (16 - 8) * ((100vw - 300px) / (1200 - 300)));
 }
 
 ul, ol, dl {
@@ -168,6 +162,7 @@ pre code {
 
 .base {
   padding-top: 40%;
+
   &-container {
     margin: 2rem;
   }
@@ -183,7 +178,7 @@ pre code {
       height: 100%;
 
       &:hover path {
-        fill: #CDBFAD;
+        fill: #CDBFAD !important;
         transition: all .15s ease-in-out;
       }
     }
@@ -194,23 +189,32 @@ pre code {
   }
 
   &-links {
-    width: 100%;
+    width: 80%;
+    padding: 0 10% 1rem 10%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-transform: uppercase;
-    font-family: big-john-regular;
-    margin-top: 2rem;
+    font-family: big-john-bold;
+    margin-top: calc(2vw + 1vh);
+    margin-bottom: calc(2vw + 1vh);
 
     a {
-      margin-right: 2rem;
+      margin: 0 5px;
+      white-space: nowrap;
+      /* freaking CSS... https://css-tricks.com/books/volume-i/scale-typography-screen-size */
+      font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1200 - 300)));
+      line-height: calc(1.3em + (1.4 - 1.1) * ((100vw - 300px) / (1200 - 300)));
     }
+
+    @media only screen and (max-width: 300px) {
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
   }
 
   &-content {
-  }
-
-  @media only screen and (max-width: 38em) {
   }
 }
 
