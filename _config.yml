@@ -15,9 +15,9 @@ links:
   - name: About Us
     href: /about-us
   - name: GitHub
-    href: https://github.com/mediocre-game-studios
+    href: https://github.com/mediocre-software-studios
   - name: Twitter
-    href: https://twitter.com/mediocre-game-studios
+    href: https://twitter.com/mediocre-software-studios
 
 pages_dir: pages
 posts_dir: posts
