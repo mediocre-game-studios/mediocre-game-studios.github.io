@@ -1,5 +1,5 @@
 url: "https://mediocre.pl"
-name: "MEDIOCRE SOFTWARE STUDIOS"
+name: "MEDIOCRE SOFTWORKS"
 description: "We're making sort of good software (and games!)"
 
 lang: pl_PL
@@ -15,9 +15,9 @@ links:
   - name: About Us
     href: /about-us
   - name: GitHub
-    href: https://github.com/mediocre-software-studios
+    href: https://github.com/mediocre-softworks
   - name: Twitter
-    href: https://twitter.com/mediocre-software-studios
+    href: https://twitter.com/mediocre-softworks
 
 pages_dir: pages
 posts_dir: posts
